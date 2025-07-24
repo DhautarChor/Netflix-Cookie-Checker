@@ -20,13 +20,13 @@ LOG_FILE = "logs.txt"
 RATE_LIMIT = 5
 
 # === BOT TOKEN ===
-BOT_TOKEN = "8226317609:AAHX9EnfbTh6I09Ga0rd0ke1vTWJdjK5pjY"
+BOT_TOKEN = "YOUR_BOT_TOKEN"
 
 # === Ensure required files ===
 for file, default in [
     (USERS_FILE, {}),
     (CODES_FILE, {}),
-    (CONFIG_FILE, {"admins": ["7280950990"]})
+    (CONFIG_FILE, {"admins": ["YOUR_USER_ID"]})
 ]:
     if not os.path.exists(file):
         with open(file, "w") as f:
